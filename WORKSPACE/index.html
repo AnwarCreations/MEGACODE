@@ -1,0 +1,334 @@
+<!doctype html>
+<html lang="en" data-theme="auto">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MegaLab — Learn anything. Actually remember it.</title>
+<meta name="description" content="MegaLab is an AI study lab that builds a personal course around your goal, teaches every lesson, quizzes you at the right moment, and turns your notes into spaced-repetition cards. Focus timer, coding lab, analytics — one login.">
+<meta name="theme-color" content="#0b0c16" media="(prefers-color-scheme: dark)">
+<meta name="theme-color" content="#f6f6fb" media="(prefers-color-scheme: light)">
+<meta property="og:title" content="MegaLab — Learn anything. Actually remember it.">
+<meta property="og:description" content="A personal AI course, Socratic mentor, memory engine, focus studio, Google Classroom game builder and Code Lab in one beautiful workspace.">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="manifest" href="site.webmanifest">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@600;700;800&family=JetBrains+Mono:wght@400;500&display=swap">
+<link rel="stylesheet" href="assets/css/base.css">
+<link rel="stylesheet" href="assets/css/landing.css">
+<link rel="stylesheet" href="assets/css/app.css">
+<link rel="stylesheet" href="assets/css/components.css">
+</head>
+<body>
+<a class="skip-link" href="#lp-main">Skip to content</a>
+
+<div id="boot" class="boot" role="status" aria-live="polite">
+  <div class="boot-mark" aria-hidden="true"><span>M</span></div>
+  <p>Opening your lab<span class="dots"><i></i><i></i><i></i></span></p>
+</div>
+
+<section id="landing" class="screen landing" hidden>
+  <header class="lp-nav" id="lp-nav">
+    <a class="brand" href="#/" aria-label="MegaLab home">
+      <span class="brand-mark" aria-hidden="true">M</span>
+      <span class="brand-word">Mega<span>Lab</span></span>
+    </a>
+    <nav class="lp-links" aria-label="Main">
+      <a href="#features">Features</a>
+      <a href="#why">Why MegaLab</a>
+      <a href="#how">How it works</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="lp-actions">
+      <button class="btn btn-ghost" data-action="open-signin">Sign in</button>
+      <button class="btn btn-primary" data-action="google-signin">
+        <span class="g-icon" aria-hidden="true"></span> Start free
+      </button>
+    </div>
+    <button class="icon-btn lp-menu" data-action="toggle-mobile-nav" aria-label="Open menu" aria-expanded="false">
+      <span data-icon="menu"></span>
+    </button>
+  </header>
+  <div class="mobile-nav" id="mobile-nav" hidden>
+    <a href="#features">Features</a>
+    <a href="#why">Why MegaLab</a>
+    <a href="#how">How it works</a>
+    <a href="#faq">FAQ</a>
+    <button class="btn btn-primary" data-action="google-signin">Start free</button>
+  </div>
+
+  <main id="lp-main">
+    <section class="hero">
+      <div class="hero-glow" aria-hidden="true"></div>
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="pulse-dot" aria-hidden="true"></span> The AI study lab, rebuilt</p>
+        <h1>Learn anything.<br><span class="grad">Actually remember it.</span></h1>
+        <p class="hero-lede">MegaLab builds a course around <em>your</em> goal, teaches every lesson, quizzes you at the right moment, and turns what you learn into cards you won't forget. One lab. Every study tool.</p>
+        <div class="hero-cta">
+          <button class="btn btn-primary btn-lg" data-action="google-signin">
+            <span class="g-icon" aria-hidden="true"></span> Continue with Google
+          </button>
+          <a class="btn btn-outline btn-lg" href="#how">See how it works <span data-icon="arrow-right"></span></a>
+        </div>
+        <p class="micro">Free to start · No credit card · Export your data anytime</p>
+        <div class="hero-trust">
+          <div class="avatar-stack" aria-hidden="true"><span>AK</span><span>MJ</span><span>RS</span><span>+</span></div>
+          <p><b>Built for deep work.</b><br>For students, career switchers and self-taught builders.</p>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-label="Preview of the MegaLab dashboard">
+        <div class="mock-window">
+          <div class="mock-bar"><i></i><i></i><i></i><span>megalab · today</span></div>
+          <div class="mock-body">
+            <div class="mock-head">
+              <div>
+                <p class="mock-kicker">Good evening, Anwar</p>
+                <h3>Python for data analysis</h3>
+              </div>
+              <div class="mock-streak"><span data-icon="flame"></span> 12</div>
+            </div>
+            <div class="mock-grid">
+              <div class="mock-card mock-progress">
+                <div class="ring" style="--p:64"><span>64<small>%</small></span></div>
+                <div>
+                  <b>Course progress</b>
+                  <p>9 of 14 lessons complete</p>
+                </div>
+              </div>
+              <div class="mock-card">
+                <p class="mock-kicker">Today · 30 min</p>
+                <b>Pandas groupby deep dive</b>
+                <div class="mock-meter"><i style="width:38%"></i></div>
+                <p class="mock-note">Continue lesson <span data-icon="arrow-right"></span></p>
+              </div>
+            </div>
+            <div class="mock-chat">
+              <div class="mock-bubble ai"><span data-icon="sparkles"></span> Groupby splits your data, then applies a function. Want a worked example with real rows?</div>
+              <div class="mock-bubble user">Yes — keep it under 10 lines.</div>
+              <div class="mock-typing"><i></i><i></i><i></i></div>
+            </div>
+            <div class="mock-foot">
+              <span class="pill"><span data-icon="cards"></span> 18 cards due</span>
+              <span class="pill"><span data-icon="clock"></span> Focus 25:00</span>
+              <span class="pill pill-accent"><span data-icon="code"></span> Code Lab</span>
+            </div>
+          </div>
+        </div>
+        <div class="float-card float-a" aria-hidden="true"><span data-icon="trophy"></span><div><b>Level 7</b><small>+320 XP this week</small></div></div>
+        <div class="float-card float-b" aria-hidden="true"><span data-icon="flame"></span><div><b>12-day streak</b><small>Best: 21 days</small></div></div>
+      </div>
+    </section>
+
+    <section class="logo-strip" aria-label="Subjects supported">
+      <span>Computer science</span><span>Languages</span><span>Mathematics</span><span>Design</span><span>Business</span><span>Science</span><span>Music</span><span>Cybersecurity</span>
+    </section>
+
+    <section class="stat-band" aria-label="MegaLab at a glance">
+      <div><b>1 login</b><span>Google, remembered</span></div>
+      <div><b>6 modes</b><span>Learn, recall, focus, code</span></div>
+      <div><b>∞ subjects</b><span>Any goal, any level</span></div>
+      <div><b>100% yours</b><span>Export everything</span></div>
+    </section>
+
+    <section class="section" id="features">
+      <div class="section-head">
+        <p class="eyebrow">The lab</p>
+        <h2>Every tool a serious learner needs.<br><span class="muted">Finally in one place.</span></h2>
+        <p>Most platforms give you content and hope. MegaLab gives you a system: plan, learn, test, retain, focus, build — and shows you what's working.</p>
+      </div>
+      <div class="bento">
+        <article class="bento-card span-2">
+          <div class="bento-icon"><span data-icon="route"></span></div>
+          <h3>Adaptive course engine</h3>
+          <p>Tell MegaLab your goal, level and daily time. Get a day-by-day curriculum from first principles to a final project — rewritten when you fall behind or race ahead.</p>
+          <div class="mini-plan" aria-hidden="true">
+            <div class="mini-row done"><i>✓</i><span>Map the territory</span><small>Day 1</small></div>
+            <div class="mini-row done"><i>✓</i><span>Core mental model</span><small>Day 2</small></div>
+            <div class="mini-row now"><i>3</i><span>Worked example</span><small>Today</small></div>
+            <div class="mini-row"><i>4</i><span>Deliberate practice</span><small>Day 4</small></div>
+          </div>
+        </article>
+        <article class="bento-card">
+          <div class="bento-icon alt"><span data-icon="brain"></span></div>
+          <h3>Socratic mentor</h3>
+          <p>An AI tutor that knows your course, checks understanding and never just dumps answers. Ask anything; get one clear step at a time.</p>
+          <div class="chat-demo" aria-hidden="true"><span>Why does this loop exit early?</span><b>What does <code>i &lt; n</code> evaluate to on the last pass?</b></div>
+        </article>
+        <article class="bento-card">
+          <div class="bento-icon warm"><span data-icon="cards"></span></div>
+          <h3>Memory engine</h3>
+          <p>One tap turns a lesson into flashcards. A tuned SM-2 scheduler brings each card back right before you'd forget it.</p>
+          <div class="flash-demo" aria-hidden="true"><small>DUE TODAY · 18</small><b>What is a closure?</b><span>Tap to reveal</span></div>
+        </article>
+        <article class="bento-card">
+          <div class="bento-icon cool"><span data-icon="code"></span></div>
+          <h3>Code Lab</h3>
+          <p>Write and run JavaScript in a sandbox, then get a line-by-line review, bug hunt or refactor plan from your AI bridge. Learn by shipping, not watching.</p>
+          <div class="code-demo" aria-hidden="true"><span class="ln">1</span><span><em>const</em> total = items.<b>reduce</b>(</span><span class="ln">2</span><span>&nbsp;&nbsp;(sum, x) =&gt; sum + x.price, 0);</span><span class="code-tag">✓ review ready</span></div>
+        </article>
+        <article class="bento-card span-2">
+          <div class="bento-icon"><span data-icon="users"></span></div>
+          <h3>Google Classroom, turned into games</h3>
+          <p>Sync teacher PDFs, slides and docs from Classroom and Drive, or drop your own notes. Text is extracted in your browser and turned into quiz battles, matching games, timelines, flashcards and teach-back challenges. No MegaLab server sees the files.</p>
+          <div class="chip-row" aria-hidden="true"><span class="chip brand">Classroom sync</span><span class="chip">PPTX · PDF · DOCX</span><span class="chip">8 game types</span><span class="chip">Drive backup</span></div>
+        </article>
+        <article class="bento-card">
+          <div class="bento-icon"><span data-icon="clock"></span></div>
+          <h3>Focus studio</h3>
+          <p>Pomodoro that survives refreshes, session tasks and a distraction log. Every focused minute feeds your streak and analytics.</p>
+          <div class="timer-demo" aria-hidden="true"><b>25:00</b><span><i></i> deep work</span></div>
+        </article>
+        <article class="bento-card span-2">
+          <div class="bento-icon"><span data-icon="chart"></span></div>
+          <h3>Progress intelligence</h3>
+          <p>A 12-week heatmap, retention curve, per-course mastery and AI-generated next actions. No vanity metrics — just the shortest path to your goal.</p>
+          <div class="heat-demo" aria-hidden="true" id="landing-heat"></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section" id="why">
+      <div class="section-head">
+        <p class="eyebrow">The gap</p>
+        <h2>Why the big platforms<br><span class="muted">still leave you stuck.</span></h2>
+        <p>We studied the category. Gamified apps optimize for streaks, course marketplaces for completion, and chatbots for answers. None of them close the loop from <b>goal → lesson → recall → proof</b>.</p>
+      </div>
+      <div class="table-wrap">
+        <table class="compare">
+          <caption class="sr-only">Feature comparison of popular learning platforms and MegaLab</caption>
+          <thead>
+            <tr><th scope="col">What learners need</th><th scope="col">Gamified apps</th><th scope="col">AI tutors</th><th scope="col">Course marketplaces</th><th scope="col">Chatbots</th><th scope="col" class="us">MegaLab</th></tr>
+          </thead>
+          <tbody>
+            <tr><th scope="row">A curriculum built around your goal</th><td><span class="no"></span>Fixed tree</td><td><span class="part"></span>Within library</td><td><span class="no"></span>Fixed courses</td><td><span class="no"></span>None</td><td class="us"><span class="yes"></span>Any goal</td></tr>
+            <tr><th scope="row">Teaching plus active recall</th><td><span class="part"></span>Drills</td><td><span class="yes"></span>Yes</td><td><span class="no"></span>Mostly video</td><td><span class="part"></span>If prompted</td><td class="us"><span class="yes"></span>Built in</td></tr>
+            <tr><th scope="row">Long-term retention scheduling</th><td><span class="part"></span>Vocab only</td><td><span class="no"></span>Limited</td><td><span class="no"></span>No</td><td><span class="no"></span>No</td><td class="us"><span class="yes"></span>SM-2 cards</td></tr>
+            <tr><th scope="row">Coding practice in-app</th><td><span class="no"></span>No</td><td><span class="no"></span>No</td><td><span class="part"></span>Separate tools</td><td><span class="part"></span>Paste only</td><td class="us"><span class="yes"></span>Code Lab</td></tr>
+            <tr><th scope="row">Focus and time tracking</th><td><span class="no"></span>No</td><td><span class="no"></span>No</td><td><span class="no"></span>No</td><td><span class="no"></span>No</td><td class="us"><span class="yes"></span>Focus studio</td></tr>
+            <tr><th scope="row">Portable, exportable data</th><td><span class="no"></span>Locked</td><td><span class="no"></span>Varies</td><td><span class="no"></span>Locked</td><td><span class="part"></span>Chat only</td><td class="us"><span class="yes"></span>One-click JSON</td></tr>
+            <tr><th scope="row">One remembered login</th><td><span class="yes"></span>Yes</td><td><span class="yes"></span>Yes</td><td><span class="yes"></span>Yes</td><td><span class="yes"></span>Yes</td><td class="us"><span class="yes"></span>Google SSO</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="table-note">Based on publicly documented feature sets as of November 2026. Competitor capabilities change; the point is the loop, not the logo.</p>
+    </section>
+
+    <section class="section" id="how">
+      <div class="section-head">
+        <p class="eyebrow">How it works</p>
+        <h2>From “I should learn this”<br><span class="muted">to proof you did.</span></h2>
+      </div>
+      <ol class="steps">
+        <li>
+          <span class="step-n">01</span>
+          <h3>Set the target</h3>
+          <p>Pick a topic, your level, minutes per day and course length. MegaLab drafts a plan that fits real life — not a 40-hour video library.</p>
+        </li>
+        <li>
+          <span class="step-n">02</span>
+          <h3>Do the daily lab</h3>
+          <p>Each session gives you a big idea, a worked example, one hands-on task and a self-check. Ask the mentor whenever you're stuck.</p>
+        </li>
+        <li>
+          <span class="step-n">03</span>
+          <h3>Lock it into memory</h3>
+          <p>Auto-made flashcards return on a spaced schedule. Quizzes surface weak spots. Analytics show what to do next.</p>
+        </li>
+        <li>
+          <span class="step-n">04</span>
+          <h3>Ship the proof</h3>
+          <p>Finish with a small project, reviewed in Code Lab or explained to the mentor. Share your streak, keep your data, start the next target.</p>
+        </li>
+      </ol>
+    </section>
+
+    <section class="section faq-section" id="faq">
+      <div class="section-head">
+        <p class="eyebrow">Questions</p>
+        <h2>Good to know.</h2>
+      </div>
+      <div class="faq">
+        <details open>
+          <summary>Is MegaLab really free to start?</summary>
+          <p>Yes. Create an account with Google and build your first course at no cost. Bring your own Google OAuth client ID if you self-host — the app is a static site with no vendor lock-in.</p>
+        </details>
+        <details>
+          <summary>What happens with my Google login?</summary>
+          <p>MegaLab uses Google Identity Services in the browser. We read your basic profile (name, email, avatar) to create your workspace. If you self-host, you can swap in your own OAuth client ID in <code>google-client-id.js</code>. No password ever touches MegaLab.</p>
+        </details>
+        <details>
+          <summary>Which AI powers the mentor?</summary>
+          <p>MegaLab is provider-agnostic. It can use a host-provided bridge (<code>window.megalabAI</code>) or a JSON endpoint you configure in <code>google-client-id.js</code>. Without either, a deterministic offline tutor keeps every workflow usable — plans, lessons, quizzes, cards, games and reviews all still work.</p>
+        </details>
+        <details>
+          <summary>How does Google Classroom fit in?</summary>
+          <p>Connect Google in the Classroom tab and MegaLab reads your active classes, assignments and teacher materials. Study files are downloaded only when you choose to build a pack, then PDF, PPTX, DOCX, XLSX, TXT, MD, CSV, HTML and RTF text is extracted in the browser and turned into games, questions and flashcards. You can also upload files or paste notes without connecting Google at all.</p>
+        </details>
+        <details>
+          <summary>Does it work offline?</summary>
+          <p>The interface and your saved courses do. Add it to your home screen: a service worker caches the app shell, so lessons, notes, cards and focus sessions keep working without a connection.</p>
+        </details>
+        <details>
+          <summary>Can I export or delete my data?</summary>
+          <p>Anytime. Profile → Data → Export downloads a complete JSON snapshot. Delete workspace removes it from this device immediately and deletes the Drive snapshot if Google Drive sync was connected. Drive tokens live only in this tab and expire automatically.</p>
+        </details>
+        <details>
+          <summary>Is this a replacement for a teacher?</summary>
+          <p>No. It's a study system that makes practice deliberate. Use it alongside classes, books and real projects — and verify important facts with primary sources.</p>
+        </details>
+      </div>
+    </section>
+
+    <section class="cta-band">
+      <div class="cta-glow" aria-hidden="true"></div>
+      <p class="eyebrow">Your next 14 days</p>
+      <h2>One login. One lab.<br>A skill you can prove.</h2>
+      <p>Start with 15 minutes a day. MegaLab handles the plan, the teaching and the memory work.</p>
+      <button class="btn btn-invert btn-lg" data-action="google-signin">
+        <span class="g-icon dark" aria-hidden="true"></span> Start your first course
+      </button>
+      <p class="micro">Continue with Google · takes 10 seconds</p>
+    </section>
+  </main>
+
+  <footer class="lp-footer">
+    <div class="footer-brand">
+      <a class="brand" href="#/"><span class="brand-mark" aria-hidden="true">M</span><span class="brand-word">Mega<span>Lab</span></span></a>
+      <p>The research-backed AI study lab.<br>Built for people who want to actually know things.</p>
+    </div>
+    <div class="footer-col"><h4>Product</h4><a href="#features">Features</a><a href="#why">Why MegaLab</a><a href="#how">How it works</a><a href="#faq">FAQ</a></div>
+    <div class="footer-col"><h4>Learn</h4><button data-action="google-signin">Start free</button><button data-action="open-signin">Sign in</button><a href="README.md">Setup guide</a></div>
+    <div class="footer-col"><h4>Trust</h4><span>Google Identity Services</span><span>Export your data</span><span>No ad tracking</span><span>Offline-first</span></div>
+    <div class="footer-bottom"><span>© <span id="year">2026</span> MegaLab. A study lab, not a diploma mill.</span><span>Made for deep work.</span></div>
+  </footer>
+</section>
+
+<div id="app" class="screen app-shell" hidden>
+  <div class="drawer-scrim" data-action="close-sidebar" hidden></div>
+  <aside class="sidebar" id="sidebar" aria-label="Workspace navigation"></aside>
+  <div class="app-main">
+    <header class="topbar" id="topbar"></header>
+    <main class="view" id="view" tabindex="-1"></main>
+    <nav class="bottom-nav" id="bottom-nav" aria-label="Quick navigation"></nav>
+  </div>
+</div>
+
+<div id="modal-root"></div>
+<div id="toast-root" class="toast-root" role="region" aria-label="Notifications" aria-live="polite"></div>
+<div id="palette-root"></div>
+
+<script src="google-client-id.js"></script>
+<script src="assets/js/data.js"></script>
+<script src="assets/js/store.js"></script>
+<script src="assets/js/ai.js"></script>
+<script src="assets/js/auth.js"></script>
+<script src="assets/js/ui.js"></script>
+<script src="assets/js/documents.js"></script>
+<script src="assets/js/games.js"></script>
+<script src="assets/js/classroom.js"></script>
+<script src="assets/js/views.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>
